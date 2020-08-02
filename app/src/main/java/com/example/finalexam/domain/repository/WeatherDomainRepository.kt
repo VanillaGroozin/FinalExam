@@ -1,9 +1,8 @@
 package com.example.finalexam.domain.repository
 
-import WeatherResponse
+import com.example.finalexam.data.WeatherResponse
 import io.reactivex.Observable
-import retrofit2.Call
 
 interface WeatherDomainRepository {
-    fun initiateGetWeather(): WeatherResponse?
+    fun initiateGetWeather(city: String) : Observable<WeatherResponse>
 }

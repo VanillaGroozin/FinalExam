@@ -8,11 +8,12 @@
     android:background="@drawable/bg_gradient">
 
     <EditText
-        android:id="@+id/tv_tet"
+        android:id="@+id/find_city_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/app_name">
+        android:imeOptions="actionDone"
+        android:text="@string/find_city_edit_text">
     </EditText>
 
     <androidx.recyclerview.widget.RecyclerView

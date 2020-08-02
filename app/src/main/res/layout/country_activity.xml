@@ -8,19 +8,40 @@
     android:padding="25dp"
     android:background="@drawable/bg_gradient">
 
-
-    <EditText
-        android:id="@+id/tv_tet"
+    <LinearLayout
+        android:id="@id/tv_tet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/app_name">
-    </EditText>
+        tools:layout_editor_absoluteX="25dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/find_city_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            app:layout_constraintTop_toTopOf="parent"></EditText>
+
+        <Button
+            android:id="@+id/find_city_button"
+            android:text="find"
+            android:textColor="@color/colorDarkBluePalette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+    </LinearLayout>
+
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:clipToPadding="false"
 
         app:layout_constraintTop_toBottomOf="@+id/tv_tet"

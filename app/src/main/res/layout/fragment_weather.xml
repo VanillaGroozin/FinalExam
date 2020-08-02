@@ -33,7 +33,7 @@
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DHAKA, BD"
+                android:text="CITY, COUNTRY"
                 android:textSize="24dp" />
 
             <TextView
@@ -242,9 +242,9 @@
                 android:weightSum="3">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.4"
                     android:background="@color/colorDarkBluePalette"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -279,9 +279,9 @@
                     android:layout_height="wrap_content" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:background="@color/colorDarkBluePalette"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -315,38 +315,6 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorDarkBluePalette"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/info"
-                        android:tint="@color/colorYellowPalette" />
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="5dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Created By"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:id="@+id/about"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AndroDocs"
-                        android:textSize="14dp" />
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
